@@ -1,0 +1,12 @@
+/****** PLACE YOUR CUSTOM STYLES HERE ******/
+.swt-logo {
+  height: 2em;
+}
+
+.overlay.image-bg.bg-black {
+  background-color: #000;
+}
+
+.background-image-holder.faded {
+  opacity: 0.2;
+}
