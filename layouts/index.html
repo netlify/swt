@@ -22,30 +22,36 @@
             </li>
         </ul>
     </section>
-    <section>
+    <section class="page-title page-title-4 bg-secondary">
         <div class="container">
-            <div class="row mb80 mb-xs-0">
-                <div class="col-md-8 col-md-offset-2 text-center">
-                    <h1>Recent Presentations</h1>
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h2 class="uppercase mb0">Recent Presentations</h2>
                 </div>
             </div>
-            <!--end of row-->
-            {{ range where .Data.Pages.ByDate "Section" "presentations"}}
-            <div class="row v-align-children">
-                <div class="col-md-7 col-sm-6 text-center mb-xs-24">
-                    <a href="{{ .Permalink }}"><img class="cast-shadow" alt="Screenshot" src="{{ .Params.cover }}" /></a>
-                </div>
-                <div class="col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-1">
-                    <h3>{{ .Title }}</h3>
-                    <p>{{ .Description }}</p>
-                    <a class="btn btn-lg" href="{{ .Permalink }}">Watch presentation</a>
-                </div>
-            </div>
-            {{ end }}
             <!--end of row-->
         </div>
-        <!--end of container-->
     </section>
+    {{ range $index, $element := where .Data.Pages.ByDate "Section" "presentations"}}
+      <section class="image-square {{ if modBool $index 2 }}left{{ else }}right{{ end }}">
+        <div class="col-md-6 image bg-black">
+            <a class="background-image-holder blurry" href="{{ $element.Permalink }}">
+                <img alt="image" class="background-image" src="{{ $element.Params.cover }}" />
+            </a>
+            <a class="btn btn-lg btn-white btn-image-overlay" href="{{ $element.Permalink }}">
+              view presentation
+            </a>
+        </div>
+        <div class="col-md-6 col-md-offset-1 content">
+            <p class="mb0">{{ dateFormat "1. 2. 2006" $element.Date }}</p>
+            <h3 class="mt0 mb0">{{ $element.Title }}</h3>
+            <p class="mb48">By {{ $element.Params.presenter }}</p>
+            <p class="mb24">
+                {{ $element.Description }}
+            </p>
+        </div>
+      </section>
+    {{ end }}
     <section class="bg-secondary" id="contact">
         <div class="container">
             <div class="row mb64 mb-xs-24">

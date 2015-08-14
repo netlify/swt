@@ -3,10 +3,29 @@
   height: 2em;
 }
 
-.overlay.image-bg.bg-black {
+.overlay.image-bg.bg-black, .image.bg-black {
   background-color: #000;
 }
 
 .background-image-holder.faded {
   opacity: 0.2;
+}
+
+.background-image-holder.blurry {
+  -webkit-transition: all 0.2s;
+     -moz-transition: all 0.2s;
+      -ms-transition: all 0.2s;
+          transition: all 0.2s;
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
+  opacity: 0.35;
+}
+
+.image .btn-image-overlay {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  margin-left: -100px;
+  margin-top: -25px;
 }
