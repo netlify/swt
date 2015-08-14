@@ -29,3 +29,7 @@
   margin-left: -100px;
   margin-top: -25px;
 }
+
+a.title-style {
+  color: inherit;
+}

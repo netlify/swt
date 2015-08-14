@@ -44,7 +44,7 @@
         </div>
         <div class="col-md-6 col-md-offset-1 content">
             <p class="mb0">{{ dateFormat "1. 2. 2006" $element.Date }}</p>
-            <h3 class="mt0 mb0">{{ $element.Title }}</h3>
+            <h3 class="mt0 mb0"><a class="title-style" href="{{ $element.Permalink }}">{{ $element.Title }}</a></h3>
             <p class="mb48">By {{ $element.Params.presenter }}</p>
             <p class="mb24">
                 {{ $element.Description }}
