@@ -75,7 +75,7 @@ Thirdly, Sacha blogs about all the things he is doing with Middleman that are le
 
 __N: Any parting words?__
 
-J: Hopefully lots of people will come on Tuesday (Sept. 29, 7pm, Wikia HQ, San Francisco) and here me talk about going from Wordpress to a Static Site Generator. I’ll be showing code examples, and will tell about my approach that might be quite a bit different from what most people are used to.
+J: Hopefully lots of people will come on Tuesday (Sept. 29, 7pm, Wikia HQ, San Francisco) and hear me talk about going from Wordpress to a Static Site Generator. I’ll be showing code examples, and will tell about my approach that might be quite a bit different from what most people are used to.
 
 __N: Thanks for taking the time to talk with us, and see you Tuesday!__
 
