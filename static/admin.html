@@ -63,6 +63,37 @@
 
   </script>
 
+  <script type="text/x-handlebars" data-template-name='cms/preview/upcoming'>
+    <section class="page-title page-title-4 bg-secondary">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="uppercase mb0">
+                        <i class="ti-microphone"></i> {{ entry.title }}
+                    </h3>
+                    <p class="mb0">
+                      {{ entry.presenter }}, {{ entry.presenter_title}} • {{ entry.location }}, {{ time-format entry.date "LL" }}
+                  </p>
+                </div>
+            </div>
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </section>
+    <section class="pt40 pb40">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+              {{ cms-preview field="body" }}
+          </div>
+        </div>
+        <!--end of row-->
+      </div>
+
+    </section>
+
+  </script>
+
   <script src="//cms.netlify.com/assets/vendor.js"></script>
   <script src="//cms.netlify.com/assets/cms.js"></script>
 </body>

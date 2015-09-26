@@ -33,3 +33,28 @@
 a.title-style {
   color: inherit;
 }
+
+.stamp {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  background: rgba(100,100,100,0.3);
+  font-size: 75px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.8);
+  width: 440px;
+  height: 90px;
+  line-height: 90px;
+  text-align: center;
+  margin-left: -220px;
+}
+
+@media (max-width: 500px) {
+  .stamp {
+    width: 300px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 50px;
+    margin-left: -150px;
+  }
+}

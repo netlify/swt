@@ -26,6 +26,36 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 text-center">
+                    <h2 class="uppercase mb0">Upcoming Meetups</h2>
+                </div>
+            </div>
+            <!--end of row-->
+        </div>
+    </section>
+
+    {{ range $index, $element := where .Data.Pages.ByDate "Section" "upcoming"}}
+      <section class="image-square {{ if modBool $index 2 }}left{{ else }}right{{ end }}">
+        <div class="col-md-6 image bg-black">
+            <a class="background-image-holder blurry" href="{{ $element.Permalink }}">
+                <img alt="image" class="background-image" src="{{ $element.Params.cover }}" />
+            </a>
+        </div>
+        <div class="col-md-6 col-md-offset-1 content">
+            <p class="mb0">{{ dateFormat "1. 2. 2006" $element.Date }}</p>
+            <h3 class="mt0 mb0"><a class="title-style" href="{{ $element.Permalink }}">{{ $element.Title }}</a></h3>
+            <p class="mb48">By {{ $element.Params.presenter }}</p>
+            <p class="mb24">
+                {{ $element.Description }}
+            </p>
+        </div>
+        <div class="stamp">Upcoming</div>
+      </section>
+    {{ end }}
+
+    <section class="page-title page-title-4 bg-secondary">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
                     <h2 class="uppercase mb0">Recent Presentations</h2>
                 </div>
             </div>
