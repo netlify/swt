@@ -1,10 +1,11 @@
 ---
 title: Wordpress to Middleman
-description: Lessons Learned, Switching from WordPress to Middleman, a Static Site Generator
-cover: /img/upcoming/james-stone.png
 presenter: James Stone
-presenter_title: Author & Blogger
-location: "Wikia"
+presenter_title: "Author & Blogger"
+location: Wikia
+description: "Lessons Learned, Switching from WordPress to Middleman, a Static Site Generator"
+cover: /img/upcoming/james-stone.png
+cmsUserSlug: wordpress-to-middleman
 date: "2015-09-29"
 ---
 
@@ -64,7 +65,7 @@ J: Probably whether the projects such as Middleman or Assemble.io will stay acti
 
 __N: Without going in too deep, what is your favorite project made with a static site generator?__
 
-J: I think if I had to pick one, I’d probably pick Discover Meteor (https://www.discovermeteor.com/) which is a book and a website by Sacha Greif. It’s really interesting to me for a couple of reasons.
+J: I think if I had to pick one, I’d probably pick [Discover Meteor](https://www.discovermeteor.com/) which is a book and a website by Sacha Greif. It’s really interesting to me for a couple of reasons.
 
 First off, he is a designer by trade who then learned to code and got really into Meteor (javascript framework) but then chose Middleman as the tool to develop things like multilingual documentation for his book, as well as all the marketing pages for it.
 
