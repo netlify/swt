@@ -18,18 +18,20 @@
 <section class="pt40 pb40 bg-dark">
   <div class="container">
     <div class="row">
-      <div class="col-sm-6 text-center">
+      <div class="col-sm-6 text-center {{ if not (isset .Params "speakerdeck") }}col-md-offset-3{{ end }}">
           <div class="embed-video-container embed-responsive embed-responsive-16by9">
               {{ .Params.youtube | safeHTML }}
           </div>
           <!--end of embed video container-->
       </div>
+      {{ if (isset .Params "speakerdeck") }}
         <div class="col-sm-6 text-center">
             <div class="embed-video-container embed-responsive embed-responsive-16by9">
                 {{ .Params.speakerdeck | safeHTML }}
             </div>
             <!--end of embed video container-->
         </div>
+      {{ end }}
     </div>
   </div>
 </section>
