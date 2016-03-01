@@ -15,11 +15,11 @@ Geoff Kimball from ZURB, a main architect behind Foundation 6, a popular CSS fra
 
 Panini is a custom built, light-weight static site generator that works as a plugin to gulp. ZURB migrated from the grunt based assemble, to Panini, when launching Foundation 6.
 
-Full transcript of the presentation below:
+**Full transcript of the presentation below:**
 
-- [Presenter: Chris Bach] Okay. So maybe I'll come on all of a sudden. Anyway, thanks so much for coming guys. This is our fourth meetup, Static Web Tech Meetup and we are really excited today as Foundation 6 has chosen to work with the static site generator intimately as part of the setup. And Geoff right here from ZURB Foundation is here to tell us more about it. So, thank you very much. All right.
+**[Presenter: Chris Bach]** Okay. So maybe I'll come on all of a sudden. Anyway, thanks so much for coming guys. This is our fourth meetup, Static Web Tech Meetup and we are really excited today as Foundation 6 has chosen to work with the static site generator intimately as part of the setup. And Geoff right here from ZURB Foundation is here to tell us more about it. So, thank you very much. All right.
 
-- [Main Presenter: Geoff Kimball] Thank you. Please keep clapping. Well, thank you. So my name's Geoff from ZURB once again, those are my first two slides, I already blew that part. First off, thank you so much guys for having us. We're gonna have a lot of fun today talking about Node and static sites, those kinds of things, let's get into it.
+**[Main Presenter: Geoff Kimball]** Thank you. Please keep clapping. Well, thank you. So my name's Geoff from ZURB once again, those are my first two slides, I already blew that part. First off, thank you so much guys for having us. We're gonna have a lot of fun today talking about Node and static sites, those kinds of things, let's get into it.
 
 Today for my talk I'm going to talk about the ZURB template which is a kind of new thing that we rolled out along with Foundation 6. It's basically a way for users of Foundation to use the same tools that ZURB uses to deliver front-end code to clients. And we do that through the Gulp task runner and also a custom templating thing that we wrote called Panini. Together the two form a delicious-build system.
 
