@@ -8,7 +8,7 @@ cover: /img/presentations/screen-shot-2016-04-01-at-6.04.58-pm.png
 youtube: "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/WFEFKFBXIUM\" frameborder=\"0\" allowfullscreen></iframe>"
 speakerdeck: " "
 cmsUserSlug: ""
-date: null
+date: 2016-04-01 
 ---
 
 Thomas Reynolds is the Technical Director at famed Portland digital agency Instrument. He’s also the creator of Middleman, one of the most widely used static site generators for large enterprise sites like MailChimp, Sequoia Capitol and Vox Media.
